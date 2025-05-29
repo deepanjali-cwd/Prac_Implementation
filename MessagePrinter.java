@@ -1,13 +1,18 @@
 public class MessagePrinter {
   
-    // Method to print the message
-    public void printMessage(String name) {
-        System.out.println("hello " + name);
+    String name;
+    //method to be called
+
+    public void printMessage(){
+        System.out.println("Hello" + name);
     }
- 
- 
-    public static void main(String[] args) {
-        MessagePrinter m = new MessagePrinter();
-        m.printMessage("Deepa");
+    //main function
+    public static void main(String args[]){
+        MessagePrinter mp = new MessagePrinter();
+        mp.name = "Deepa";
+        mp.printMessage();
+
     }
+
+
  }
